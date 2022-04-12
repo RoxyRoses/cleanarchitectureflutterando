@@ -22,9 +22,9 @@ class ResultSearchModel extends ResultSearch {
 
   factory ResultSearchModel.fromMap(Map<String, dynamic> map) {
     return ResultSearchModel(
-      titleR: map['titleR'] ?? '',
-      contentR: map['contentR'] ?? '',
-      imgR: map['imgR'] ?? '',
+      titleR: map['login'] ?? '',
+      contentR: (map['id'] ?? '').toString(),
+      imgR: map['avatar_url'] ?? '',
     );
   }
 
